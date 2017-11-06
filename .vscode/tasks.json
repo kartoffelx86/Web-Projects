@@ -1,0 +1,10 @@
+{
+    
+    "version": "0.1.0",
+    "command": "blisk",    
+    "windows": {
+        "command": "C:\\Users\\julia\\AppData\\Local\\Blisk\\Application\\blisk.exe"
+    },
+    "args": ["${file}"]
+    
+}
