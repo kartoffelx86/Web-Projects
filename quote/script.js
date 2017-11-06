@@ -1,7 +1,7 @@
-function init() {
+$(function () {
   $("#generate").click(generate);
   $("#twitter").click(tweet);
-}
+});
 function tweet() {
   window.open(
     "https://twitter.com/intent/tweet?text=" +
@@ -39,4 +39,3 @@ function generate() {
   });
   $("#title, #subtitle").fadeTo(400, 0);
 }
-$("document").ready(init());
