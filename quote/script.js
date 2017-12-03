@@ -13,7 +13,7 @@ function tweet() {
 function generate() {
   $("#generate").addClass("is-loading");
   function success(data) {
-    var quoteobj = data;
+    var quoteobj = JSON.parse(data);
     $("#title").html(quoteobj.quote);
     $("#subtitle").html("~" + quoteobj.author);
     $("#generate").removeClass("is-loading");
@@ -31,7 +31,7 @@ function generate() {
     url: "https://andruxnet-random-famous-quotes.p.mashape.com/",
     data: { cat: "famous" },
     headers: {
-      "X-Mashape-Key": "fBS0BpKB2AmshneYTotYf54rOh57p1uRRK9jsnFAvZnARrHJo0",
+      "X-Mashape-Key": "Koc372uA8FmshwlZR6CvlFeiHCnUp1ZtaXtjsnefeKUZOJueTZ",
       Accept: "application/json"
     },
     success: success,
